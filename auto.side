@@ -1,0 +1,52 @@
+{
+  "id": "40d73269-c75a-4443-b546-d95484fb9f62",
+  "version": "2.0",
+  "name": "auto-pdfdownlaod",
+  "url": "https://wb.gov.in",
+  "tests": [{
+    "id": "4dbe5f4c-f8cd-4608-ba47-3bf61921fb90",
+    "name": "test1",
+    "commands": [{
+      "id": "8d332bb4-1306-41a1-9d73-f30f26687c4a",
+      "comment": "Open",
+      "command": "open",
+      "target": "/documents-notification.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d22d147-2794-4b71-9cff-a2e5968a2367",
+      "comment": "Wait for visible",
+      "command": "waitForElementVisible",
+      "target": "xpath=//table[@class='table table-press']/tbody/tr[2]/td/a",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "e78d2bfa-0512-4e6a-9fe7-6089931619be",
+      "comment": "Click",
+      "command": "click",
+      "target": "xpath=//table[@class='table table-press']/tbody/tr[2]/td/a",
+      "targets": [],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9103",
+      "windowTimeout": 2000
+    }, {
+      "id": "5121a9b8-67be-4410-a431-710d75d1bb34",
+      "comment": "Close",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "54bef171-4240-4a83-8ee2-24b5a52ba928",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4dbe5f4c-f8cd-4608-ba47-3bf61921fb90"]
+  }],
+  "urls": ["https://wb.gov.in/"],
+  "plugins": []
+}
